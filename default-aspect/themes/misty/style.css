@@ -40,6 +40,7 @@ height: 90px;
 border-style: solid;
 border-left: none;
 border-right: none;
+font-family: cursive;
 }
 
 #topsection h1{
@@ -77,13 +78,16 @@ background: rgba(239, 239, 239, 0.91);
 #footer{
 clear: left;
 width: 100%;
-background: rgba(0, 0, 0, 0.75);
+background: #EAEAEA;
 text-align: center;
 padding: 4px 0;
+border-style: solid;
+border-radius: 6px;
+border-width: 2px;
 }
 
 #footer a{
-color: #FFFF80;
+color: rgb(28, 33, 9);
 margin-left: 700px;
 font-style: oblique;
 }

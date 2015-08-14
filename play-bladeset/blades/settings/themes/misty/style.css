@@ -15,3 +15,10 @@
 .selectBox{
 	margin-bottom: 10px;
 }
+
+.inputBox{
+    margin-bottom: 10px;
+    width: 130px;
+    padding: 4px;
+    border-radius: 5px;
+}

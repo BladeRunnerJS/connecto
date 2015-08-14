@@ -10,18 +10,21 @@ function GridViewModel() {
 	this.size = 7; //todo: make configurable
 	
 	this.columns = ko.observableArray();
-	
-	this.players = ["Player 1:", "Player 2:"];
-	this.redTurn = ko.observable(true);
+
+	this.firstPlayerName = ko.observable("Player 1");
+	this.secondPlayerName = ko.observable("Player 2");
 
 	
-	this.currentPlayer = ko.observable(this.players[0]);
+	this.players = [this.firstPlayerName(), this.secondPlayerName()];
+	this.redTurn = ko.observable(true);
+	
+	this.currentPlayer = ko.observable(this.firstPlayerName());
 	this.currentColour = "red";
 
 	this.arrow = ko.observable("O");//DOWN
 	this.columnsEnabled = ko.observable(true);
 	
-	this.messages = ["Select a column", "Identify the image"];
+	this.messages = ["select a column", "identify the image"];
 	this.message = ko.observable(this.messages[0]);
 
 	for(var i = 1; i <= this.size  ; i++)
@@ -32,7 +35,8 @@ function GridViewModel() {
 	this._eventHub = ServiceRegistry.getService( 'br.event-hub' );
 
 	this._eventHub.channel( 'grid' ).on( 'take-turn', this.executeTurn, this );	
-	window.yyy = this;
+	this._eventHub.channel( 'settings' ).on( 'change-player-name', this._changePlayerName, this );
+	window.xxx = this;
 };
 
 GridViewModel.prototype.executeTurn = function(correct)
@@ -69,7 +73,7 @@ GridViewModel.prototype.deselectAll = function()
 
 GridViewModel.prototype._changePlayer = function()
 {
-	var newPlayer = this.currentPlayer() == this.players[0] ? this.players[1] :  this.players[0];
+	var newPlayer = this.currentPlayer() == this.firstPlayerName() ? this.secondPlayerName():  this.firstPlayerName();
 	this.currentPlayer(newPlayer);
 
 	var redTurn = this.redTurn() ? false : true;
@@ -83,6 +87,21 @@ GridViewModel.prototype._changeMessage = function()
 
 	var newArrow = this.arrow() == "O" ? "M" : "O";
 	this.arrow(newArrow);
+};
+
+GridViewModel.prototype._changePlayerName = function(playerNumber, newName)
+{
+	var currentPlayer;
+	if(playerNumber == 1) {
+		currentPlayer = this.currentPlayer() == this.firstPlayerName() ? newName : this.currentPlayer();
+		this.firstPlayerName(newName);
+	}
+	else {
+		currentPlayer = this.currentPlayer() == this.secondPlayerName() ? newName : this.currentPlayer();
+		this.secondPlayerName(newName);		
+	}
+
+	this.currentPlayer(currentPlayer);
 };
 
 module.exports = GridViewModel;
