@@ -1,27 +1,13 @@
-/*body {
-    background-color: #eee;
-}
-
-.app {
-    background-color:white;
-    max-width:500px;
-    margin:20px auto;
-    padding: 5px 20px;
-}
-
-#connecto-grid {
-	width: 450px;
-	height: 350px;
-}
-*/
 #connecto-settings {
 	width: 200px;
 	height: 370px;
+	margin-top: 10px;
 }
 
 #connecto-choices {
 	width: 200px;
 	height: 370px;
+	margin-top: 10px;
 }
 
 

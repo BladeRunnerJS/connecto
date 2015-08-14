@@ -4,7 +4,6 @@ var ko = require( 'ko' );
 var ServiceRegistry = require( 'br/ServiceRegistry' );
 
 function SettingsViewModel() {
-	window.bobby = require('service!br.app-meta-service');
 	this._eventHub = ServiceRegistry.getService( 'br.event-hub' );
 	this.availableCategories = ko.observableArray(['Animals', 'Sports', 'Transport', 'Vegetables']);
 	this.selectedCategory = ko.observable("Animals");

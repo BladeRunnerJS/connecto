@@ -22,7 +22,7 @@ body{
 margin:0;
 padding:0;
 line-height: 1.5em;
-background-color:#363B47;
+background: #e0dfe4 url('body_bg.png') repeat-x;
 font-family: cabin;
 }
 
@@ -36,12 +36,15 @@ margin: 0 auto; /*Center container on page*/
 
 #topsection{
 background: #EAEAEA;
-height: 90px; /*Height of top section*/
+height: 90px;
+border-style: solid;
+border-left: none;
+border-right: none;
 }
 
 #topsection h1{
 margin: 0;
-padding-top: 25px;
+padding-top: 30px;
 font-size: 80px;
 text-align: center;
 }
@@ -50,7 +53,7 @@ text-align: center;
 #contentwrapper{
 float: left;
 width: 100%;
-background-color:#AAC7D1;
+background-color:rgba(255, 255, 255, 0.64);
 }
 
 #contentcolumn{
@@ -61,21 +64,20 @@ margin: 0 190px 0 180px; /*Margins for content column. Should be "0 RightColumnW
 float: left;
 width: 180px; /*Width of left column in pixel*/
 margin-left: -840px; /*Set margin to that of -(MainContainerWidth)*/
-background: #d1dded;
+background: rgba(239, 239, 239, 0.91);
 }
 
 #rightcolumn{
 float: left;
 width: 190px; /*Width of right column*/
 margin-left: -190px; /*Set left margin to -(RightColumnWidth)*/
-background: #d1dded;
+background: rgba(239, 239, 239, 0.91);
 }
 
 #footer{
 clear: left;
 width: 100%;
-background: black;
-color: #d1dded;
+background: rgba(0, 0, 0, 0.75);
 text-align: center;
 padding: 4px 0;
 }
@@ -83,6 +85,7 @@ padding: 4px 0;
 #footer a{
 color: #FFFF80;
 margin-left: 700px;
+font-style: oblique;
 }
 
 .innertube{

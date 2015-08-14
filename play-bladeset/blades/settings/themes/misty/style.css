@@ -1,9 +1,10 @@
 .play-settings-blade{
-	font-size:20px;
+	font-size:15px;
 }
 
 .play-settings-blade select{
 	font-size:18px;
+	border-radius: 5px;
 }
 
 #connecto-settings .label{

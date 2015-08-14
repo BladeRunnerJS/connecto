@@ -1,5 +1,6 @@
 .connecto-grid-container{
 	width: inherit;
+	margin-top: 10px;
 }
 
 .disc-grid{
@@ -14,11 +15,11 @@
 }
 
 .red{
-	color: rgb(233, 51, 51);
+	color: #D44F2A;
 }
 
 .blue{
-	color: #004BCC;
+	color: #2B92B6;
 }
 
 .empty{
@@ -36,15 +37,15 @@
 }
 
 .redHeader{
-	background: rgb(233, 51, 51);
+	background: #D44F2A;
 	border: 2px solid;
-	border-color: rgb(233, 51, 51);
+	border-color: #D44F2A;
 }
 
 .blueHeader{
-	background: #004BCC;
+	background: #2B92B6;
 	border: 2px solid;
-	border-color: #004BCC;
+	border-color: #2B92B6;
 }
 
 .selected{
