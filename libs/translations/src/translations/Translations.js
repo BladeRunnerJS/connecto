@@ -4,293 +4,221 @@ var Translations = function() {
 };
 
 Translations.prototype.Animals = [
-                                  
-	            {
-					english: "dog",
-					spanish:"el perro"
-				},
-				{
-					english:"bear",
-					spanish: "el oso"
-				},
-				{
-					english:"bird" ,
-					spanish: "el pájaro"
-				},
-				{
-					english:"cat",
-					spanish: "el gato"
-				},
-				
-				{
-					english:"chicken",
-					spanish: "la gallina"
-				},
-				{
-					english:"cow",
-					spanish: "la vaca"
-				},
-				{
-					english:"dolphin",
-					spanish: "el delfín"
-				},
-				{
-					english:"donkey",
-					spanish: "el burro"
-				},
-				{
-					english:"duck",
-					spanish: "el pato"
-				},
-				{
-					english:"elephant",
-					spanish: "el elefante"
-				},
-				{
-					english:"fish",
-					spanish: "el pez"
-				},
-				{
-					english:"fox",
-					spanish: "el zorro"
-				},
-				{
-					english:"frog",
-					spanish: "la rana"
-				},
-				{
-					english:"giraffe",
-					spanish: "la jirafa"
-				},
-				{
-					english:"guineapig",
-					spanish: "la cobaya"
-				},
-				{
-					english:"hamster",
-					spanish: "hámster"
-				},
-				{
-					english:"horse",
-					spanish: "el caballo"
-				},
-				{
-					english:"kangaroo",
-					spanish: "el canguro"
-				},
-				{
-					english:"lion",
-					spanish: "el león"
-				},
-				{
-					english:"monkey",
-					spanish: "el mono"
-				},
-				{
-					english:"mouse",
-					spanish: "el ratón"
-				},
-				{
-					english:"killerwhale",
-					spanish: "la orca"
-				},
-				{
-					english:"penguin",
-					spanish: "el pingüino"
-				},
-				{
-					english:"pig",
-					spanish: "el cerdo"
-				},
-				{
-					english:"rabbit",
-					spanish: "el conejo"
-				},
-				{
-					english:"shark",
-					spanish: "el tiburón"
-				},
-				{
-					english:"sheep",
-					spanish: "la oveja"
-				},
-				{
-					english:"snake",
-					spanish: "la serpiente"
-				},
-				{
-					english:"squirrel",
-					spanish: "la ardilla"
-				},
-				{
-					english:"tiger",
-					spanish: "el tigre"
-				},
-				{
-					english:"turtle",
-					spanish: "la tortuga"
-				},
-				{
-					english:"whale",
-					spanish: "la ballena"
-				},
-				{
-					english:"wildboar",
-					spanish: "el jabalí"
-				},
-				{
-					english:"wolf",
-					spanish: "el zorro"
-				},
-				{
-					english:"zebra",
-					spanish: "la cebra"
-				}
-		];
+ {english: "dog",
+french: "le chien",
+spanish: "el perro"},
+{english: "bear",
+french: "l'ours",
+spanish: "el oso"},
+{english: "bird" ,
+french: "l'oiseau",
+spanish: "el Pajaro"},
+{english: "cat",
+french: "le chat",
+spanish: "el Gato"},
+{english: "chicken",
+french: "le poulet",
+spanish: "la gallina"},
+{english: "cow",
+french: "la vache",
+spanish: "la vaca"},
+{english: "dolphin",
+french: "le dauphin",
+spanish: "el Delfin"},
+{english: "donkey",
+french: "l'âne",
+spanish: "el burro"},
+{english: "duck",
+french: "le canard",
+spanish: "el Pato"},
+{english: "elephant",
+french: "l'éléphant",
+spanish: "el elefante"},
+{english: "fish",
+french: "le poisson",
+spanish: "pez el"},
+{english: "fox",
+french: "le renard",
+spanish: "zorro el"},
+{english: "frog",
+french: "la grenouille",
+spanish: "la Rana"},
+{english: "giraffe",
+french: "la girafe",
+spanish: "la jirafa"},
+{english: "guineapig",
+french: "le cobaye",
+spanish: "la cobaya"},
+{english: "hamster",
+french: "hamster",
+spanish: "Hamster"},
+{english: "horse",
+french: "le cheval",
+spanish: "el caballo"},
+{english: "kangaroo",
+french: "le kangourou",
+spanish: "el canguro"},
+{english: "lion",
+french: "le lion",
+spanish: "el Leon"},
+{english: "monkey",
+french: "le singe",
+spanish: "el Mono"},
+{english: "mouse",
+french: "la souris",
+spanish: "el Raton"},
+{english: "killerwhale",
+french: "l'killerwhale",
+spanish: "la orca"},
+{english: "penguin",
+french: "le pingouin",
+spanish: "el pingüino"},
+{english: "pig",
+french: "le cochon",
+spanish: "el cerdo"},
+{english: "rabbit",
+french: "le lapin",
+spanish: "el conejo"},
+{english: "shark",
+french: "le requin",
+spanish: "el tiburón"},
+{english: "sheep",
+french: "les moutons",
+spanish: "la oveja"},
+{english: "snake",
+french: "le serpent",
+spanish: "la serpiente"},
+{english: "squirrel",
+french: "l'écureuil",
+spanish: "la Ardilla"},
+{english: "tiger",
+french: "le tigre",
+spanish: "el Tigre"},
+{english: "turtle",
+french: "la tortue",
+spanish: "la Tortuga"},
+{english: "whale",
+french: "la baleine",
+spanish: "la Ballena"},
+{english: "wildboar",
+french: "le sanglier",
+spanish: "el jabalí"},
+{english: "wolf",
+french: "le loup",
+spanish: "zorro el"},
+{english: "zebra",
+french: "zèbre",
+spanish: "la cebra"
+}
+];
 	
 Translations.prototype.Sports = [
-			                                  
-			{
-				english: "archery",
-				spanish:"el tiro con arco"
-			},
-			{
-				english:"badminton",
-				spanish: "el bádminton"
-			},
-			{
-				english:"baseball" ,
-				spanish: "el béisbol"
-			},
-			{
-				english:"basketball",
-				spanish: "el baloncesto"
-			},
-			
-			{
-				english:"bowling",
-				spanish: "los bolos"
-			},
-			{
-				english:"boxing",
-				spanish: "el boxeo"
-			},
-			{
-				english:"canoeing",
-				spanish: "el piragüismo"
-			},
-			{
-				english:"cycling",
-				spanish: "el ciclismo"
-			},
-			{
-				english:"dancing",
-				spanish: "el baile"
-			},
-			{
-				english:"fencing",
-				spanish: "la esgrima"
-			},
-			{
-				english:"fishing",
-				spanish: "la pesca"
-			},
-			{
-				english:"football",
-				spanish: "el fútbol"
-			},
-			{
-				english:"golf",
-				spanish: "el golf"
-			},
-			{
-				english:"gymnastics",
-				spanish: "la gimnasia"
-			},
-			{
-				english:"handball",
-				spanish: "el balonmano"
-			},
-			{
-				english:"hiking",
-				spanish: "el senderismo"
-			},
-			{
-				english:"hockey",
-				spanish: "el hockey"
-			},
-			{
-				english:"horseriding",
-				spanish: "la equitación"
-			},
-			{
-				english:"iceskating",
-				spanish: "el patinaje sobre hielo"
-			},
-			{
-				english:"karate",
-				spanish: "el karate"
-			},
-			{
-				english:"parachuting",
-				spanish: "el paracaidismo"
-			},
-			{
-				english:"rollerskating",
-				spanish: "el patinaje sobre ruedas"
-			},
-			{
-				english:"rowing",
-				spanish: "el remo"
-			},
-			{
-				english:"rugby",
-				spanish: "el rugby"
-			},
-			{
-				english:"running",
-				spanish: "el footing"
-			},
-			{
-				english:"sailing",
-				spanish: "la navegación"
-			},
-			{
-				english:"scubadiving",
-				spanish: "el buceo"
-			},
-			{
-				english:"skiing",
-				spanish: "el esquí"
-			},
-			{
-				english:"snowboarding",
-				spanish: "el snowboard"
-			},
-			{
-				english:"surfing",
-				spanish: "el surf"
-			},
-			{
-				english:"swimming",
-				spanish: "la natación"
-			},
-			{
-				english:"tabletennis",
-				spanish: "el ping pong"
-			},
-			{
-				english:"tennis",
-				spanish: "el tenis"
-			},
-			{
-				english:"volleyball",
-				spanish: "el voleibol"
-			},
-			{
-				english:"wrestling",
-				spanish: "la lucha"
-			}
+{english: "archery",
+french: "l'arc",
+spanish: "el tiro con arco"},
+{english: "badminton",
+french: "badminton",
+spanish: "el bádminton"},
+{english: "baseball" ,
+french: "le baseball",
+spanish: "el béisbol"},
+{english: "basketball",
+french: "le basket-ball",
+spanish: "el baloncesto"},
+{english: "bowling",
+french: "bowling",
+spanish: "los bolos"},
+{english: "boxing",
+french: "la boxe",
+spanish: "el boxeo"},
+{english: "canoeing",
+french: "le canoë",
+spanish: "el piragüismo"},
+{english: "cycling",
+french: "le vélo",
+spanish: "el ciclismo"},
+{english: "dancing",
+french: "la danse",
+spanish: "el baile"},
+{english: "fencing",
+french: "la clôture",
+spanish: "la esgrima"},
+{english: "fishing",
+french: "la pêche",
+spanish: "La Pesca"},
+{english: "football",
+french: "le football",
+spanish: "el fútbol"},
+{english: "golf",
+french: "le terrain",
+spanish: "golf el"},
+{english: "gymnastics",
+french: "la gymnastique",
+spanish: "La gimnasia"},
+{english: "handball",
+french: "le handball",
+spanish: "el balonmano"},
+{english: "hiking",
+french: "la randonnée",
+spanish: "el senderismo"},
+{english: "hockey",
+french: "le hockey",
+spanish: "el hockey"},
+{english: "horseriding",
+french: "le cheval",
+spanish: "la equitación"},
+{english: "iceskating",
+french: "la patinoire",
+spanish: "el patinaje sobre hielo"},
+{english: "karate",
+french: "karaté",
+spanish: "el karaté"},
+{english: "parachuting",
+french: "parachutage",
+spanish: "el Paracaidismo"},
+{english: "rollerskating",
+french: "le roller",
+spanish: "el patinaje sobre ruedas"},
+{english: "rowing",
+french: "l'aviron",
+spanish: "el remo"},
+{english: "rugby",
+french: "le rugby",
+spanish: "el rugby"},
+{english: "running",
+french: "la gestion",
+spanish: "el pied"},
+{english: "sailing",
+french: "le voile",
+spanish: "la navegación"},
+{english: "scubadiving",
+french: "la plongée sous-marine",
+spanish: "el buceo"},
+{english: "skiing",
+french: "le ski",
+spanish: "el esquí"},
+{english: "snowboarding",
+french: "la planche à neige",
+spanish: "el de snowboard"},
+{english: "surfing",
+french: "surf",
+spanish: "el surfer"},
+{english: "swimming",
+french: "la piscine",
+spanish: "la natación"},
+{english: "tabletennis",
+french: "le ping-pong",
+spanish: "el ping-pong"},
+{english: "tennis",
+french: "tennis",
+spanish: "tenis el"},
+{english: "volleyball",
+french: "volley-ball",
+spanish: "el voleibol"},
+{english: "wrestling",
+french: "la lutte",
+spanish: "La Lucha"
+}
 ];
 
 Translations.prototype.Transport = [

@@ -8,7 +8,7 @@ function SettingsViewModel() {
 	this.availableCategories = ko.observableArray(['Animals', 'Sports', 'Transport', 'Vegetables']);
 	this.selectedCategory = ko.observable("Animals");
 
-	this.availableLanguages = ko.observableArray(['Spanish', 'Coming soon', 'Coming soon', 'Coming soon']);
+	this.availableLanguages = ko.observableArray(['Spanish', 'French']);
 	this.selectedLanguage = ko.observable("Spanish");
 
 	this.player1 = ko.observable("Player 1");
@@ -28,7 +28,7 @@ SettingsViewModel.prototype.playerTwoNameChanged = function(args) {
 };
 
 SettingsViewModel.prototype.languageChanged = function() {
-	//todo
+	this._eventHub.channel( 'settings' ).trigger( 'change-language', this.selectedLanguage() );
 };
 
 module.exports = SettingsViewModel;

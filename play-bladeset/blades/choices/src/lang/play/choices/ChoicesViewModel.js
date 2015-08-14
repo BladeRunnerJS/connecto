@@ -10,11 +10,13 @@ function ChoicesViewModel() {
 	this._eventHub = ServiceRegistry.getService( 'br.event-hub' );	
 	this._eventHub.channel( 'grid' ).on( 'next-options', this._getOptions, this );
 	this._eventHub.channel( 'settings' ).on( 'change-category', this._setNewCategory, this );
+	this._eventHub.channel( 'settings' ).on( 'change-language', this._setNewLanguage, this );
 	
 	var imageLocation = this._computeResourceURL();
 	this.bgImage = ko.observable(imageLocation);
 	this.message = ko.observable( "" );
 	this.translations = new Translations();
+	this.currentLanguage = "spanish";
 
 	this.rando = new Randomator();
 	
@@ -67,7 +69,9 @@ ChoicesViewModel.prototype._setNewCategory = function(category){
 ChoicesViewModel.prototype._getInitialOptions = function() {
 	for(var i = 0; i < this.numberOfOptions; i++)
 	{
-		this.currentOptions()[i](this.allChoices[i]);
+		var tranlationsObject = this.allChoices[i];
+		tranlationsObject["translation"] = this.allChoices[i][this.currentLanguage];
+		this.currentOptions()[i](tranlationsObject);
 	}
 	//TODO remove hardcoding
 	this.setNewImage("dog.png");
@@ -85,7 +89,9 @@ ChoicesViewModel.prototype._getOptions = function(categoryChangedFlag) {
 	for(var i = 0; i < this.numberOfOptions; i++)
 	{
 		var newIndex = randomOptionArray[i];
-		this.currentOptions()[i](this.allChoices[newIndex]);
+		var tranlationsObject = this.allChoices[newIndex];
+		tranlationsObject["translation"] = this.allChoices[newIndex][this.currentLanguage];
+		this.currentOptions()[i](tranlationsObject);
 	}
 	
 	var randomSelection = this.rando.getRandomNumberUpTo(this.numberOfOptions);
@@ -151,7 +157,6 @@ ChoicesViewModel.prototype._addClassToButtons = function() {
 	}
 };
 
-
 ChoicesViewModel.prototype._clearSelectedButton = function(index) {
 	var copy = this.currentOptions()[index]();
 	copy["redSelected"] = false;
@@ -161,6 +166,10 @@ ChoicesViewModel.prototype._clearSelectedButton = function(index) {
 
 ChoicesViewModel.prototype._computeResourceURL = function() {
 	return window.getComputedStyle(document.getElementById("dumb")).getPropertyValue("background-image");
+}
+
+ChoicesViewModel.prototype._setNewLanguage = function(lang){
+	this.currentLanguage = lang.toLowerCase();
 }
 
 module.exports = ChoicesViewModel;
