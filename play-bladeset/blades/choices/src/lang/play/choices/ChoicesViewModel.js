@@ -21,6 +21,7 @@ function ChoicesViewModel() {
 	this.category = ko.observable("Animals");
 	this.allChoices = this.translations[this.category()];
 
+	this.gameHasStarted = false;
 	this.buttonsEnabled = ko.observable(false);
 	
 	this.numberOfOptions = 3;
@@ -94,7 +95,13 @@ ChoicesViewModel.prototype._getOptions = function(categoryChangedFlag) {
 	this.message("");
 	
 	this.currentImage = this.currentOptions()[randomSelection]()["english"];
-	this.buttonsEnabled(true);
+
+	if(this.gameHasStarted){
+		this.buttonsEnabled(true);
+	}
+	else {
+		this.gameHasStarted = true;
+	}
 };
 
 ChoicesViewModel.prototype._createEmptyOptionsList = function() {
