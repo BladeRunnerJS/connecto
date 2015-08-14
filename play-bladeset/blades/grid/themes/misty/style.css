@@ -1,0 +1,70 @@
+.connecto-grid-container{
+	width: inherit;
+}
+
+.disc-grid{
+	height: inherit;
+	width: inherit;
+  
+}
+
+.play-grid-blade {
+    background-color: white;
+    color: black;
+}
+
+.red{
+	color: rgb(233, 51, 51);
+}
+
+.blue{
+	color: #004BCC;
+}
+
+.empty{
+	color: grey;
+}
+
+.column-numbers{
+   background: blue;
+   border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  width:35px;
+  height:35px;
+}
+
+.redHeader{
+	background: rgb(233, 51, 51);
+	border: 2px solid;
+	border-color: rgb(233, 51, 51);
+}
+
+.blueHeader{
+	background: #004BCC;
+	border: 2px solid;
+	border-color: #004BCC;
+}
+
+.selected{
+	border-color: black;
+}
+
+.grid-cell{
+	text-align: center;
+	height: 36px;
+	font-size: 54px;
+	font-family: circles;
+	margin-top: 7px;
+}
+
+.player-message{
+	float:left;
+	padding-right:4px;
+	font-size:20px;
+}
+
+.arrow{
+	font-family:pointers;
+}

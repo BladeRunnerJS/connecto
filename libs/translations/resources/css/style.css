@@ -1,0 +1,27 @@
+.a-class {
+	font-size: 40px;
+}
+
+.choice-image
+{
+	height: 130px;
+	width: 120px;
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: contain;
+    background-color: white;
+    border: 10px solid #463E3F;
+    box-shadow: white 0px 0px 0px 2px inset;
+}
+
+.choice-image-temp
+{
+	height: 130px;
+	width: 120px;
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dummy {
+	background-image : url('../images/dummy/dummy.png');
+}

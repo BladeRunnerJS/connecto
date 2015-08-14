@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<@base.tag@/>
+		<meta charset="UTF-8">
+
+		<title>My Application</title>
+
+		<@css.bundle theme="misty"@/>
+
+	</head>
+		<body>
+		<div id="maincontainer">
+
+			<div id="topsection">
+				<div class="innertube"><h1>CONNECTO</h1></div>
+			</div>
+
+			<div id="contentwrapper">
+				<div id="contentcolumn">
+					<div id="connecto-grid" class="innertube"></div>
+				</div>
+			</div>
+
+			<div id="leftcolumn">
+				<div id="connecto-settings" class="innertube"><div class="label">Settings</div></div>
+			</div>
+
+			<div id="rightcolumn">
+				<div id="connecto-choices" class="innertube"></div>
+			</div>
+
+			<div id="footer"><a href="http://www.bladerunnerjs.org/">BladerunnerJS</a></div>
+			<div id="dumb" class="dummy"></div>
+
+		</div>
+		
+		<@i18n.bundle @/>
+    	<!-- dev-minifier can be set to "combined" for all JS content to be bundled with a single request -->
+		<@js.bundle dev-minifier="none" prod-minifier="combined"@/>
+		<script>
+			( function() {
+				var App = require( 'lang/App' );
+				var app = new App();
+			} )();
+		</script>
+		</body>
+</html>

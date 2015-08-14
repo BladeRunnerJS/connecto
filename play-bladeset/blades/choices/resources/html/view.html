@@ -1,0 +1,13 @@
+<div id="lang.play.choices.view-template">
+	<div class="play-choices-blade">
+		<div id="choice-image" class="choice-image" data-bind="style: { backgroundImage: bgImage }"></div>
+		
+		<div data-bind="foreach: currentOptions">
+			<button class="metro" data-bind="enable: $parent.buttonsEnabled, text: spanish, click: $parent.submitAnswer.bind($parent), css: { redButton : !$parent.blueButtons(), blueButton : $parent.blueButtons(), selected: buttonSelected} "></button><br/>
+		</div>
+		
+		<br/>
+		<div class="answer-message" data-bind="text: message"></div>
+		
+	</div>	
+</div>

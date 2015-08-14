@@ -1,0 +1,23 @@
+<div id="lang.play.grid.view-template" class="connecto-grid-container">
+		<div class="player-instruction">
+			<div class="player-message" data-bind="text: currentPlayer"></div>
+			<div class="player-message" data-bind="text: message"></div>
+			<div class="player-message arrow" data-bind="text: arrow"></div>
+		</div>	
+		<!-- button data-bind="click: executeTurn"> delete me </button-->
+		<table class="disc-grid">
+		 <thead>
+		 	<tr data-bind="foreach: columns">
+		 		<th><button class="column-numbers" data-bind="enable: $parent.columnsEnabled(), text: index, click: function() { $parent.deselectAll(); select()  }, css: { selected : selected(), redHeader: $parent.redTurn(), blueHeader: !$parent.redTurn() }"></button></th> 
+		 </thead>
+		 <tbody>
+		 	<tr data-bind="foreach: columns">
+		 		<td data-bind="foreach: cells">
+		 			<div class="grid-cell" data-bind="css: { red : colour() == 'red', blue : colour() == 'blue' , empty : colour() == 'empty' }">O</div>		 		
+		 		</td>
+		 	</tr>
+		 
+		 </tbody>		 
+		 
+		 </table>
+</div>

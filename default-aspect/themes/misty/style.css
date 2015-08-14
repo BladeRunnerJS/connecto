@@ -1,0 +1,118 @@
+@font-face {
+    font-family: cabin;
+    src: url(Cabin-SemiBold.otf);
+}
+
+@font-face {
+    font-family: circles;
+    src: url(Circles_New.ttf);
+}
+
+@font-face {
+    font-family: pointers;
+    src: url(pointers.ttf);
+}
+
+@font-face {
+    font-family: circled-numbers;
+    src: url(CNFREEBD.ttf);
+}
+
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+background-color:#363B47;
+font-family: cabin;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+#maincontainer{
+width: 840px; /*Width of main container*/
+margin: 0 auto; /*Center container on page*/
+}
+
+#topsection{
+background: #EAEAEA;
+height: 90px; /*Height of top section*/
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 25px;
+font-size: 80px;
+text-align: center;
+}
+
+
+#contentwrapper{
+float: left;
+width: 100%;
+background-color:#AAC7D1;
+}
+
+#contentcolumn{
+margin: 0 190px 0 180px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+}
+
+#leftcolumn{
+float: left;
+width: 180px; /*Width of left column in pixel*/
+margin-left: -840px; /*Set margin to that of -(MainContainerWidth)*/
+background: #d1dded;
+}
+
+#rightcolumn{
+float: left;
+width: 190px; /*Width of right column*/
+margin-left: -190px; /*Set left margin to -(RightColumnWidth)*/
+background: #d1dded;
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: black;
+color: #d1dded;
+text-align: center;
+padding: 4px 0;
+}
+
+#footer a{
+color: #FFFF80;
+margin-left: 700px;
+}
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+
+
+
+#connecto-settings {
+    width: 200px;
+    height: 370px;
+}
+
+#connecto-choices {
+    width: 200px;
+    height: 370px;
+}
+
+
+.sections {
+    width: 700px;
+}
+
+.section {
+    float: left; 
+}
+
+
+
+.disc-grid{
+    margin-left: 60px;
+}

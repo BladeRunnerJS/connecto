@@ -1,0 +1,16 @@
+.play-settings-blade{
+	font-size:20px;
+}
+
+.play-settings-blade select{
+	font-size:18px;
+}
+
+#connecto-settings .label{
+	padding-left: 12px;
+	font-size: x-large;
+}
+
+.selectBox{
+	margin-bottom: 10px;
+}

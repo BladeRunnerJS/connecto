@@ -1,0 +1,24 @@
+.play-grid-blade {
+    background-color: white;
+    color: black;
+}
+
+.red{
+	color: red;
+}
+
+.blue{
+	color: blue;
+}
+
+.empty{
+	color: grey;
+}
+
+.selected{
+	background-color : yellow;
+}
+
+body{
+	font-size: 36px;
+}
