@@ -21,7 +21,6 @@ function ChoicesViewModel() {
 	this.category = ko.observable("Animals");
 	this.allChoices = this.translations[this.category()];
 
-	this.blueButtons = ko.observable(true);
 	this.buttonsEnabled = ko.observable(false);
 	
 	this.numberOfOptions = 3;
@@ -40,6 +39,8 @@ function ChoicesViewModel() {
 	this._getInitialOptions();
 	
 	this._setNewCategory("Animals");
+
+	this.redTurn = true;
 }
 
 ChoicesViewModel.prototype.setNewImage = function(name) {
@@ -78,11 +79,6 @@ ChoicesViewModel.prototype._getOptions = function(categoryChangedFlag) {
 		this._clearSelectedButton(this.lastSelected);
 	}
 
-	if(!categoryChangedFlag)
-	{
-		var blueButtons = this.blueButtons() ? false : true;
-		this.blueButtons(blueButtons);
-	}
 	var randomOptionArray = this.rando.getSetNumberOfRandoms(this.numberOfOptions, this.arrayMax - 1);	
 
 	for(var i = 0; i < this.numberOfOptions; i++)
@@ -131,24 +127,28 @@ ChoicesViewModel.prototype._highlightAnswer = function(answer, correct) {
 		if(this.currentOptions()[i]()["english"] == answer)
 		{
 			var copy = this.currentOptions()[i]();
-			copy["buttonSelected"] = true;
+			copy["redSelected"] = this.redTurn ? true : false;
+			copy["blueSelected"] = this.redTurn ? false : true;
 			this.currentOptions()[i](copy);
 			this.lastSelected = i;
 		}
 	}
+	this.redTurn = this.redTurn ? false : true;
 };
 
 ChoicesViewModel.prototype._addClassToButtons = function() {
 	for(var i = 0; i < this.allChoices.length; i++)
 	{
-		this.allChoices[i]["buttonSelected"] = false;
+		this.allChoices[i]["redSelected"] = false;
+		this.allChoices[i]["blueSelected"] = false;
 	}
 };
 
 
 ChoicesViewModel.prototype._clearSelectedButton = function(index) {
 	var copy = this.currentOptions()[index]();
-	copy["buttonSelected"] = false;
+	copy["redSelected"] = false;
+	copy["blueSelected"] = false;
 	this.currentOptions()[index](copy);
 };
 

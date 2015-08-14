@@ -26,13 +26,16 @@
   font-size: 15px;
 }
 
+.defaultChoiceButton {
+    background-color: #A8AEB1;
+}
 
+.selectedRed {
+    background-color: #D44F2A;
+}
 
-
-
-
-.selected {
-    background-color: grey;
+.selectedBlue {
+    background-color: #2B92B6;
 }
 
 .answer-message{

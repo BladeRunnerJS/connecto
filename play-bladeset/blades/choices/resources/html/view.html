@@ -3,7 +3,7 @@
 		<div id="choice-image" class="choice-image" data-bind="style: { backgroundImage: bgImage }"></div>
 		
 		<div data-bind="foreach: currentOptions">
-			<button class="metro" data-bind="enable: $parent.buttonsEnabled, text: spanish, click: $parent.submitAnswer.bind($parent), css: { redButton : !$parent.blueButtons(), blueButton : $parent.blueButtons(), selected: buttonSelected} "></button><br/>
+			<button class="metro defaultChoiceButton" data-bind="enable: $parent.buttonsEnabled, text: spanish, click: $parent.submitAnswer.bind($parent), css: { selectedRed : redSelected, selectedBlue: blueSelected} "></button><br/>
 		</div>
 		
 		<br/>
