@@ -96,7 +96,7 @@ ChoicesViewModel.prototype._getOptions = function(categoryChangedFlag) {
 	
 	this.currentImage = this.currentOptions()[randomSelection]()["english"];
 
-	if(this.gameHasStarted){
+	if(this.gameHasStarted && !categoryChangedFlag){
 		this.buttonsEnabled(true);
 	}
 	else {
