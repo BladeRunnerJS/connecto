@@ -1,0 +1,173 @@
+
+
+
+/*** ../../libs/javascript/shivie8/shivie8.css ***/
+
+article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section {
+	display: block;
+}
+mark {
+	background: #FFFF00; color: #000000;
+}
+template {
+	display:none;
+}
+
+
+
+
+/*** libs/translations/resources/css/style.css ***/
+
+.a-class {
+	font-size: 40px;
+}
+
+.choice-image
+{
+	height: 130px;
+	width: 120px;
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: contain;
+    background-color: white;
+    border: 10px solid white;
+    box-shadow: white 0px 0px 0px 2px inset;
+}
+
+.choice-image-temp
+{
+	height: 130px;
+	width: 120px;
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dummy {
+	background-image : url('../../cssresource/lib_translations/resources/images/dummy/dummy.png');
+}
+
+
+
+/*** play-bladeset/blades/choices/themes/common/style.css ***/
+
+.play-choices-blade {
+    padding:14px;
+    max-width: 350px;
+}
+.play-choices-blade h1 {
+    border-bottom:solid 1px #ccc;
+    margin-bottom:3px;
+}
+.play-choices-blade p {
+    line-height: 1.2;
+    padding: 4px 0;
+}
+.play-choices-blade button {
+    margin-top: 5px;
+    width: 140px;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.redButton {
+    background-color: black;
+}
+
+.greenButton {
+    background-color: black;
+}
+
+
+
+/*** play-bladeset/blades/grid/themes/common/style.css ***/
+
+.play-grid-blade {
+    padding:10px;
+    border:solid 1px black;
+    max-width: 350px;
+}
+.play-grid-blade h1 {
+    border-bottom:solid 1px #ccc;
+    margin-bottom:3px;
+}
+.play-grid-blade p {
+    line-height: 1.2;
+    padding: 4px 0;
+}
+.play-grid-blade button {
+    margin-top: 5px;
+}
+
+.player-instruction {
+	margin-left:21%;
+}
+
+.disc-grid{
+	height: inherit;
+	width: inherit;
+}
+
+
+
+
+/*** play-bladeset/blades/settings/themes/common/style.css ***/
+
+.play-settings-blade {
+    padding:10px;
+    max-width: 350px;
+}
+.play-settings-blade h1 {
+    border-bottom:solid 1px #ccc;
+    margin-bottom:3px;
+}
+.play-settings-blade p {
+    line-height: 1.2;
+    padding: 4px 0;
+}
+.play-settings-blade button {
+    margin-top: 5px;
+}
+
+
+
+
+/*** play-bladeset/themes/common/style.css ***/
+
+/* common bladeset level styling */
+
+
+
+
+/*** default-aspect/themes/common/style.css ***/
+
+#connecto-settings {
+	width: 200px;
+	height: 370px;
+	margin-top: 10px;
+}
+
+#connecto-choices {
+	width: 200px;
+	height: 370px;
+	margin-top: 10px;
+}
+
+
+.sections {
+	width: 700px;
+}
+
+.section {
+	float: left; 
+}
+
+
+
+.disc-grid{
+	margin-left: 86px;
+}

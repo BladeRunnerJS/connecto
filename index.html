@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- base tag deprecated -->
+		<meta charset="UTF-8">
+
+		<title>My Application</title>
+
+		<link rel="stylesheet" href="v/20150817102757/css/common/bundle.css"/>
+<link rel="stylesheet" title="misty" href="v/20150817102757/css/misty/bundle.css"/>
+
+
+	</head>
+		<body>
+		<div id="maincontainer">
+
+			<div id="topsection">
+				<div class="innertube"><h1>CONNECTO</h1></div>
+			</div>
+
+			<div id="contentwrapper">
+				<div id="contentcolumn">
+					<div id="connecto-grid" class="innertube"></div>
+				</div>
+			</div>
+
+			<div id="leftcolumn">
+				<div id="connecto-settings" class="innertube"><div class="label">Settings</div></div>
+			</div>
+
+			<div id="rightcolumn">
+				<div id="connecto-choices" class="innertube"></div>
+			</div>
+
+			<div id="footer"><a href="http://www.bladerunnerjs.org/">BladerunnerJS</a></div>
+			<div id="dumb" class="dummy"></div>
+
+		</div>
+		
+		<script type="text/javascript" src="v/20150817102757/i18n/en.js"></script>
+
+    	<!-- dev-minifier can be set to "combined" for all JS content to be bundled with a single request -->
+		<script type='text/javascript' src='v/20150817102757/js/prod/combined/bundle.js'></script>
+
+		<script>
+			( function() {
+				var App = require( 'lang/App' );
+				var app = new App();
+			} )();
+		</script>
+		</body>
+</html>

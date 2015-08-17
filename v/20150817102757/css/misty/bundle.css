@@ -1,0 +1,287 @@
+
+
+
+/*** play-bladeset/blades/choices/themes/misty/style.css ***/
+
+.blueButton{
+	background-color: #2B92B6;
+}
+
+.redButton{
+	background-color: #D44F2A;
+}
+
+.metro {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.metro:hover, .metro:focus, .metro:active {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  font-size: 15px;
+}
+
+.defaultChoiceButton {
+    background-color: #A8AEB1;
+}
+
+.selectedRed {
+    background-color: #D44F2A;
+}
+
+.selectedBlue {
+    background-color: #2B92B6;
+}
+
+.answer-message{
+	margin-left: 28px;
+	font-size: 22px;
+}
+
+
+
+
+/*** play-bladeset/blades/grid/themes/misty/style.css ***/
+
+.connecto-grid-container{
+	width: inherit;
+	margin-top: 10px;
+}
+
+.disc-grid{
+	height: inherit;
+	width: inherit;
+  
+}
+
+.play-grid-blade {
+    background-color: white;
+    color: black;
+}
+
+.red{
+	color: #D44F2A;
+}
+
+.blue{
+	color: #2B92B6;
+}
+
+.empty{
+	color: rgba(97, 97, 97, 0.9);
+}
+
+.column-numbers{
+   background: blue;
+   border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  width:35px;
+  height:35px;
+}
+
+.redHeader{
+	background: #D44F2A;
+	border: 2px solid;
+	border-color: #D44F2A;
+}
+
+.blueHeader{
+	background: #2B92B6;
+	border: 2px solid;
+	border-color: #2B92B6;
+}
+
+.selected{
+	border-color: black;
+}
+
+.grid-cell{
+	text-align: center;
+	height: 36px;
+	font-size: 54px;
+	font-family: circles;
+	margin-top: 7px;
+}
+
+.player-message{
+	float:left;
+	padding-right:4px;
+	font-size:20px;
+}
+
+.arrow{
+	font-family:pointers;
+}
+
+
+
+/*** play-bladeset/blades/settings/themes/misty/style.css ***/
+
+.play-settings-blade{
+	font-size:15px;
+}
+
+.play-settings-blade select{
+	font-size:18px;
+	border-radius: 5px;
+}
+
+#connecto-settings .label{
+	padding-left: 12px;
+	font-size: x-large;
+}
+
+.selectBox{
+	margin-bottom: 10px;
+}
+
+.inputBox{
+    margin-bottom: 10px;
+    width: 130px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+
+
+/*** default-aspect/themes/misty/style.css ***/
+
+@font-face {
+    font-family: cabin;
+    src: url(../../cssresource/aspect_default/theme_misty/Cabin-SemiBold.otf);
+}
+
+@font-face {
+    font-family: circles;
+    src: url(../../cssresource/aspect_default/theme_misty/Circles_New.ttf);
+}
+
+@font-face {
+    font-family: pointers;
+    src: url(../../cssresource/aspect_default/theme_misty/pointers.ttf);
+}
+
+@font-face {
+    font-family: circled-numbers;
+    src: url(../../cssresource/aspect_default/theme_misty/CNFREEBD.ttf);
+}
+
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+background: #e0dfe4 url('../../cssresource/aspect_default/theme_misty/body_bg.png') repeat-x;
+font-family: cabin;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+#maincontainer{
+width: 840px; /*Width of main container*/
+margin: 0 auto; /*Center container on page*/
+}
+
+#topsection{
+background: #EAEAEA;
+height: 90px;
+border-style: solid;
+border-left: none;
+border-right: none;
+font-family: cursive;
+margin-top: 30px;
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 30px;
+font-size: 80px;
+text-align: center;
+}
+
+
+#contentwrapper{
+float: left;
+width: 100%;
+background-color:rgba(255, 255, 255, 0.64);
+}
+
+#contentcolumn{
+margin: 0 190px 0 180px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+}
+
+#leftcolumn{
+float: left;
+width: 180px; /*Width of left column in pixel*/
+margin-left: -840px; /*Set margin to that of -(MainContainerWidth)*/
+background: rgba(239, 239, 239, 0.91);
+}
+
+#rightcolumn{
+float: left;
+width: 190px; /*Width of right column*/
+margin-left: -190px; /*Set left margin to -(RightColumnWidth)*/
+background: rgba(239, 239, 239, 0.91);
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: #EAEAEA;
+text-align: center;
+padding: 4px 0;
+border-style: solid;
+border-radius: 6px;
+border-width: 2px;
+}
+
+#footer a{
+color: rgb(28, 33, 9);
+margin-left: 700px;
+font-style: oblique;
+}
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+
+
+
+#connecto-settings {
+    width: 200px;
+    height: 370px;
+}
+
+#connecto-choices {
+    width: 200px;
+    height: 370px;
+}
+
+
+.sections {
+    width: 700px;
+}
+
+.section {
+    float: left; 
+}
+
+
+
+.disc-grid{
+    margin-left: 60px;
+}
+
