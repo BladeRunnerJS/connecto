@@ -3,7 +3,7 @@
 var Translations = function() {	
 };
 
-Translations.prototype.Animals = [
+Translations.prototype.animals = [
 			{english: "dog",
 			french: "le chien",
 			spanish: "el perro"},
@@ -112,7 +112,7 @@ Translations.prototype.Animals = [
 			}
 ];
 	
-Translations.prototype.Sports = [
+Translations.prototype.sports = [
 			{english: "archery",
 			french: "l'arc",
 			spanish: "el tiro con arco"},
@@ -221,7 +221,7 @@ Translations.prototype.Sports = [
 			}
 ];
 
-Translations.prototype.Transport = [
+Translations.prototype.transport = [
 			{
 				english: "airplane",
 				spanish:"el avión"
@@ -365,7 +365,7 @@ Translations.prototype.Transport = [
 			}
 ];
 
-Translations.prototype.Vegetables = [
+Translations.prototype.vegetables = [
 			{
 				english: "artichoke",
 				spanish:"la alcachofa"

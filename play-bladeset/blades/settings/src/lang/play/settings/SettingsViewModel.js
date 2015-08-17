@@ -5,8 +5,8 @@ var ServiceRegistry = require( 'br/ServiceRegistry' );
 
 function SettingsViewModel() {
 	this._eventHub = ServiceRegistry.getService( 'br.event-hub' );
-	this.availableCategories = ko.observableArray(['Animals', 'Sports', 'Transport', 'Vegetables']);
-	this.selectedCategory = ko.observable("Animals");
+	this.availableCategories = ko.observableArray(['animals', 'sports', 'transport', 'vegetables']);
+	this.selectedCategory = ko.observable("animals");
 
 	this.availableLanguages = ko.observableArray(['Spanish', 'French']);
 	this.selectedLanguage = ko.observable("Spanish");

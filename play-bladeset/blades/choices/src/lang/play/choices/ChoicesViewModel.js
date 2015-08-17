@@ -20,7 +20,7 @@ function ChoicesViewModel() {
 
 	this.rando = new Randomator();
 	
-	this.category = ko.observable("Animals");
+	this.category = ko.observable("animals");
 	this.allChoices = this.translations[this.category()];
 
 	this.gameHasStarted = false;
@@ -41,7 +41,7 @@ function ChoicesViewModel() {
 
 	this._getInitialOptions();
 	
-	this._setNewCategory("Animals");
+	this._setNewCategory("animals");
 
 	this.redTurn = true;
 }
@@ -52,7 +52,7 @@ ChoicesViewModel.prototype.setNewImage = function(name) {
 	oldUrl[oldUrl.length - 2] = this.category();
 	oldUrl[oldUrl.length - 1] = name + ")";
 	var newUrl = oldUrl.join("/");
-	
+
 	this.bgImage(newUrl);
 };
 
