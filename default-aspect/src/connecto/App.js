@@ -1,8 +1,8 @@
 'use strict';
 
-var GridViewModel = require( 'lang/play/grid/GridViewModel' );
-var ChoicesViewModel = require( 'lang/play/choices/ChoicesViewModel' );
-var SettingsViewModel = require( 'lang/play/settings/SettingsViewModel' );
+var GridViewModel = require( 'connecto/play/grid/GridViewModel' );
+var ChoicesViewModel = require( 'connecto/play/choices/ChoicesViewModel' );
+var SettingsViewModel = require( 'connecto/play/settings/SettingsViewModel' );
 
 var KnockoutComponent = require( 'br/knockout/KnockoutComponent' );
 var SimpleFrame = require( 'br/component/SimpleFrame' );
@@ -13,15 +13,15 @@ var App = function() {
   this.appFrames = [];
     
   var gridViewModel = new GridViewModel();
-  var gridComponent = new KnockoutComponent('lang.play.grid.view-template', gridViewModel );
+  var gridComponent = new KnockoutComponent('connecto.play.grid.view-template', gridViewModel );
   this.appFrames.push( { id: 'connecto-grid', frame: new SimpleFrame(gridComponent)});   
 
   var choicesViewModel = new ChoicesViewModel();
-  var choicesComponent = new KnockoutComponent('lang.play.choices.view-template', choicesViewModel );
+  var choicesComponent = new KnockoutComponent('connecto.play.choices.view-template', choicesViewModel );
   this.appFrames.push( { id: 'connecto-choices', frame: new SimpleFrame(choicesComponent)}); 
 
   var settingsViewModel = new SettingsViewModel();
-  var settingsComponent = new KnockoutComponent('lang.play.settings.view-template', settingsViewModel );
+  var settingsComponent = new KnockoutComponent('connecto.play.settings.view-template', settingsViewModel );
   this.appFrames.push( { id: 'connecto-settings', frame: new SimpleFrame(settingsComponent)});
 
   this._attachElements();    
