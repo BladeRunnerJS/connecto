@@ -1,6 +1,6 @@
 var ChoicesViewModelTest = TestCase( 'ChoicesViewModelTest' );
 
-var ChoicesViewModel = require( 'lang/play/choices/ChoicesViewModel' );
+var ChoicesViewModel = require( 'connecto/play/choices/ChoicesViewModel' );
 
 ChoicesViewModelTest.prototype.testSomething = function() {
   var model = new ChoicesViewModel();

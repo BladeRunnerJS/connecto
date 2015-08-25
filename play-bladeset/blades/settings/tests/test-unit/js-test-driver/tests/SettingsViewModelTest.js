@@ -1,6 +1,6 @@
 var SettingsViewModelTest = TestCase( 'SettingsViewModelTest' );
 
-var SettingsViewModel = require( 'lang/play/settings/SettingsViewModel' );
+var SettingsViewModel = require( 'connecto/play/settings/SettingsViewModel' );
 
 SettingsViewModelTest.prototype.testSomething = function() {
   var model = new SettingsViewModel();

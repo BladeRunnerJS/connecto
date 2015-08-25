@@ -4,7 +4,7 @@ var ko = require( 'ko' );
 var i18n = require( 'br/I18n' );
 var ServiceRegistry = require( 'br/ServiceRegistry' );
 
-var Column = require('lang/play/grid/Column');
+var Column = require('connecto/play/grid/Column');
 
 function GridViewModel() {
 	this.size = 7; //todo: make configurable

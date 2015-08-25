@@ -1,6 +1,6 @@
 var GridViewModelTest = TestCase( 'GridViewModelTest' );
 
-var GridViewModel = require( 'lang/play/grid/GridViewModel' );
+var GridViewModel = require( 'connecto/play/grid/GridViewModel' );
 
 GridViewModelTest.prototype.testSomething = function() {
   var model = new GridViewModel();
